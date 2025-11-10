@@ -43,6 +43,31 @@ body::before {
     will-change: transform, background-position, background-size;
 }
 
+/* Global text justification for body copy */
+p,
+.skill-details,
+.section-subtitle,
+.project-card p,
+.education-card p,
+.experience-card p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Experience lists specifically */
+.experience-list,
+.experience-list li {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
+/* Keep hero description not justified */
+.hero p,
+.hero .hero-subtitle,
+.hero .hero-description {
+    text-align: center;
+}
 @keyframes backgroundMove {
     0%, 100% {
         background-position: center center;
@@ -212,15 +237,17 @@ body::before {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     animation: fadeInUp 1s ease 0.2s backwards;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.4s backwards;
+    letter-spacing: 0.01em;
+    word-spacing: 0.02em;
 }
 
 .hero-description {
@@ -540,7 +567,7 @@ body::before {
     background: #2c2c44;
     padding: 2rem;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     transition: all 0.3s;
 }
 
@@ -557,7 +584,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1rem;
+    margin: 0 0 1rem 0; /* alineado a la izquierda */
 }
 
 .education-icon i {
@@ -785,9 +812,11 @@ body::before {
     /* Hero text sizes en móvil */
     .hero-title {
         font-size: 2.1rem;
+        margin-bottom: 0.4rem;
     }
     .hero-subtitle {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
     }
     .section {
         padding: 3.5rem 1.25rem;

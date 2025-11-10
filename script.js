@@ -85,7 +85,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all sections and cards
-document.querySelectorAll('.section, .skill-card, .project-card, .timeline-item').forEach(el => {
+document.querySelectorAll('.section, .skill-card, .project-card, .experience-card, .education-card').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
@@ -105,4 +105,21 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.skill-card').forEach(card => {
     skillObserver.observe(card);
+});
+
+// Experience cards click to highlight
+document.querySelectorAll('.experience-card').forEach(card => {
+    card.addEventListener('click', function() {
+        // Remove active class from all cards
+        document.querySelectorAll('.experience-card').forEach(c => c.classList.remove('active'));
+        // Add active class to clicked card
+        this.classList.add('active');
+    });
+});
+
+// Click outside to remove active state
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.experience-card')) {
+        document.querySelectorAll('.experience-card').forEach(c => c.classList.remove('active'));
+    }
 });

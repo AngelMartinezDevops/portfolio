@@ -5,87 +5,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ángel Ignacio Martínez - Platform Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Ángel Ignacio Martínez</h1>
-        <p>Platform Engineer | Infrastructure as Code</p>
-    </header>
-
-    <section id="about">
-        <h2>About</h2>
-        <p>Platform Engineer con casi 2 años de experiencia gestionando infraestructura cloud con Azure, Terraform, Ansible y Kubernetes. Especializado en automatización, CI/CD y GitOps.</p>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>DevOps Engineer</h3>
-            <p class="period">2023 - Present</p>
-            <ul>
-                <li>Gestión infraestructura Azure con Terraform (IaC)</li>
-                <li>Implementación GitOps con ArgoCD en AKS</li>
-                <li>Automatización con Ansible y CI/CD pipelines</li>
-                <li>Migración legacy infrastructure usando IaC</li>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">ÁM</a>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </section>
+    </nav>
 
-    <section id="skills">
-        <h2>Tech Stack</h2>
-        <div class="skills-grid">
-            <span class="skill">Azure</span>
-            <span class="skill">AWS</span>
-            <span class="skill">Terraform</span>
-            <span class="skill">Ansible</span>
-            <span class="skill">Kubernetes</span>
-            <span class="skill">Docker</span>
-            <span class="skill">ArgoCD</span>
-            <span class="skill">GitOps</span>
-            <span class="skill">Python</span>
-            <span class="skill">Bash</span>
-            <span class="skill">CI/CD</span>
-            <span class="skill">Linux</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Ángel Ignacio Martínez</h1>
+            <p class="hero-subtitle">Platform Engineer | Infrastructure as Code</p>
+            <p class="hero-description">Building scalable, automated infrastructure with Azure, Terraform, and Kubernetes</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        
-        <div class="project">
-            <h3>Legacy Infrastructure Migration</h3>
-            <p><strong>Challenge:</strong> Azure VMs with corrupted networking affecting client services.</p>
-            <p><strong>Solution:</strong> Recreated infrastructure using Terraform, documented issues in post-mortem that led to full legacy migration approval.</p>
-            <p><strong>Stack:</strong> Azure, Terraform, Networking</p>
-        </div>
-
-        <div class="project">
-            <h3>GitOps Implementation</h3>
-            <p><strong>Challenge:</strong> Manual deployments causing delays and errors.</p>
-            <p><strong>Solution:</strong> Implemented GitOps workflow with ArgoCD on AKS, automated deployments.</p>
-            <p><strong>Stack:</strong> AKS, ArgoCD, Helm, GitOps</p>
-        </div>
-
-        <div class="project">
-            <h3>Self-Service Infrastructure</h3>
-            <p><strong>Challenge:</strong> Developers dependent on DevOps for infrastructure provisioning.</p>
-            <p><strong>Solution:</strong> Created reusable Terraform modules and CI/CD pipelines enabling developer autonomy.</p>
-            <p><strong>Stack:</strong> Terraform, Azure DevOps, IaC</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Platform Engineer con casi 2 años de experiencia gestionando infraestructura cloud con Azure, Terraform, Ansible y Kubernetes.</p>
+                    <p>Especializado en automatización, CI/CD y GitOps. Mi enfoque es construir plataformas que permitan a los equipos de desarrollo desplegar de forma rápida, segura y confiable.</p>
+                    <p>Apasionado por la automatización, la infraestructura como código y la mejora continua de procesos.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Automation Focus</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            <a href="https://www.linkedin.com/in/angelignaciomartinez/" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/AngelMartinezDevops" target="_blank">GitHub</a> | 
-            <a href="mailto:angelmartinezdevops@gmail.com">Email</a>
-        </p>
+    <!-- Experience Section -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>DevOps Engineer</h3>
+                        <p class="timeline-period">2023 - Present</p>
+                        <ul class="timeline-list">
+                            <li>Gestión de infraestructura Azure con Terraform (IaC)</li>
+                            <li>Implementación GitOps con ArgoCD en AKS</li>
+                            <li>Automatización con Ansible y CI/CD pipelines</li>
+                            <li>Migración de infraestructura legacy usando IaC</li>
+                            <li>Desarrollo de módulos reutilizables para self-service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>Built with HTML/CSS | Deployed on Cloudflare Pages | 2025</p>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-microsoft"></i>
+                    <h3>Azure</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-aws"></i>
+                    <h3>AWS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cube"></i>
+                    <h3>Terraform</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Ansible</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-dharmachakra"></i>
+                    <h3>Kubernetes</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker"></i>
+                    <h3>Docker</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>ArgoCD</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Bash</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git/CI/CD</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-linux"></i>
+                    <h3>Linux</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Networking</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Legacy Infrastructure Migration</h3>
+                    <p><strong>Challenge:</strong> Azure VMs with corrupted networking affecting client services.</p>
+                    <p><strong>Solution:</strong> Recreated infrastructure using Terraform, documented issues in post-mortem that led to full legacy migration approval.</p>
+                    <div class="project-tags">
+                        <span class="tag">Azure</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Networking</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>GitOps Implementation</h3>
+                    <p><strong>Challenge:</strong> Manual deployments causing delays and errors.</p>
+                    <p><strong>Solution:</strong> Implemented GitOps workflow with ArgoCD on AKS, automated deployments.</p>
+                    <div class="project-tags">
+                        <span class="tag">AKS</span>
+                        <span class="tag">ArgoCD</span>
+                        <span class="tag">Helm</span>
+                        <span class="tag">GitOps</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Self-Service Infrastructure</h3>
+                    <p><strong>Challenge:</strong> Developers dependent on DevOps for infrastructure provisioning.</p>
+                    <p><strong>Solution:</strong> Created reusable Terraform modules and CI/CD pipelines enabling developer autonomy.</p>
+                    <div class="project-tags">
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Azure DevOps</span>
+                        <span class="tag">IaC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Interested in working together? Let's connect!</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/angelignaciomartinez/" target="_blank" class="contact-btn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/AngelMartinezDevops" target="_blank" class="contact-btn">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:angelmartinezdevops@gmail.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Ángel Ignacio Martínez. Built with HTML/CSS | Deployed on Cloudflare Pages</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-

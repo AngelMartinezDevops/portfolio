@@ -93,6 +93,38 @@ body {
     width: 100%;
 }
 
+/* Language Toggle */
+.lang-toggle {
+    background: transparent;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.lang-toggle:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.lang-option {
+    color: var(--gray);
+    transition: color 0.3s;
+}
+
+.lang-option.active {
+    color: var(--primary);
+}
+
+.lang-separator {
+    margin: 0 0.3rem;
+    color: var(--gray);
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;

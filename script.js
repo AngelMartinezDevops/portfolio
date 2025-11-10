@@ -1,3 +1,50 @@
+// Language Management
+let currentLang = localStorage.getItem('language') || 'en';
+
+function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('language', lang);
+    
+    // Update all elements with data-lang attributes
+    document.querySelectorAll('[data-en]').forEach(el => {
+        if (lang === 'en') {
+            el.textContent = el.getAttribute('data-en');
+        } else {
+            el.textContent = el.getAttribute('data-es');
+        }
+    });
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    // Update toggle button
+    updateLangToggle();
+}
+
+function updateLangToggle() {
+    const options = document.querySelectorAll('.lang-option');
+    options.forEach(option => {
+        option.classList.remove('active');
+        if (option.textContent === currentLang.toUpperCase()) {
+            option.classList.add('active');
+        }
+    });
+}
+
+// Initialize language on load
+document.addEventListener('DOMContentLoaded', () => {
+    setLanguage(currentLang);
+    
+    // Language toggle button
+    const langToggle = document.getElementById('langToggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            const newLang = currentLang === 'en' ? 'es' : 'en';
+            setLanguage(newLang);
+        });
+    }
+});
+
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -59,4 +106,3 @@ const skillObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.skill-card').forEach(card => {
     skillObserver.observe(card);
 });
-

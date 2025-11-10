@@ -13,12 +13,17 @@
         <div class="nav-container">
             <a href="#home" class="logo">ÁM</a>
             <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-en="About" data-es="Sobre mí">About</a></li>
+                <li><a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a></li>
+                <li><a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
+                <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
             </ul>
+            <button id="langToggle" class="lang-toggle" aria-label="Toggle language">
+                <span class="lang-option active">EN</span>
+                <span class="lang-separator">|</span>
+                <span class="lang-option">ES</span>
+            </button>
         </div>
     </nav>
 
@@ -26,11 +31,11 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Ángel Ignacio Martínez</h1>
-            <p class="hero-subtitle">Platform Engineer | Infrastructure as Code</p>
-            <p class="hero-description">Building scalable, automated infrastructure with Azure, Terraform, and Kubernetes</p>
+            <p class="hero-subtitle">Platform Engineer | IaC | DevOps | GitOps</p>
+            <p class="hero-description" data-en="Building scalable and automated infrastructure with Azure, Terraform, and Kubernetes" data-es="Construyendo infraestructura escalable y automatizada con Azure, Terraform y Kubernetes">Building scalable and automated infrastructure with Azure, Terraform, and Kubernetes</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#projects" class="btn btn-primary" data-en="View Projects" data-es="Ver Proyectos">View Projects</a>
+                <a href="#contact" class="btn btn-secondary" data-en="Get in Touch" data-es="Contactar">Get in Touch</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -41,25 +46,25 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-en="About Me" data-es="Sobre Mí">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Platform Engineer con casi 2 años de experiencia gestionando infraestructura cloud con Azure, Terraform, Ansible y Kubernetes.</p>
-                    <p>Especializado en automatización, CI/CD y GitOps. Mi enfoque es construir plataformas que permitan a los equipos de desarrollo desplegar de forma rápida, segura y confiable.</p>
-                    <p>Apasionado por la automatización, la infraestructura como código y la mejora continua de procesos.</p>
+                    <p data-en="Platform Engineer with nearly 2 years of experience managing cloud infrastructure with Azure, Terraform, Ansible, and Kubernetes." data-es="Platform Engineer con casi 2 años de experiencia gestionando infraestructura cloud con Azure, Terraform, Ansible y Kubernetes.">Platform Engineer with nearly 2 years of experience managing cloud infrastructure with Azure, Terraform, Ansible, and Kubernetes.</p>
+                    <p data-en="Specialized in automation, CI/CD, and GitOps. My focus is building platforms that enable development teams to deploy quickly, securely, and reliably." data-es="Especializado en automatización, CI/CD y GitOps. Mi enfoque es construir plataformas que permitan a los equipos de desarrollo desplegar de forma rápida, segura y confiable.">Specialized in automation, CI/CD, and GitOps. My focus is building platforms that enable development teams to deploy quickly, securely, and reliably.</p>
+                    <p data-en="Passionate about automation, infrastructure as code, and continuous process improvement." data-es="Apasionado por la automatización, la infraestructura como código y la mejora continua de procesos.">Passionate about automation, infrastructure as code, and continuous process improvement.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
                         <div class="stat-number">2+</div>
-                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-label" data-en="Years Experience" data-es="Años Experiencia">Years Experience</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">10+</div>
-                        <div class="stat-label">Technologies</div>
+                        <div class="stat-label" data-en="Technologies" data-es="Tecnologías">Technologies</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">100%</div>
-                        <div class="stat-label">Automation Focus</div>
+                        <div class="stat-label" data-en="Automation Focus" data-es="Enfoque Automatización">Automation Focus</div>
                     </div>
                 </div>
             </div>
@@ -69,19 +74,19 @@
     <!-- Experience Section -->
     <section id="experience" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title" data-en="Experience" data-es="Experiencia">Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>DevOps Engineer</h3>
-                        <p class="timeline-period">2023 - Present</p>
+                        <p class="timeline-period" data-en="2023 - Present" data-es="2023 - Actualidad">2023 - Present</p>
                         <ul class="timeline-list">
-                            <li>Gestión de infraestructura Azure con Terraform (IaC)</li>
-                            <li>Implementación GitOps con ArgoCD en AKS</li>
-                            <li>Automatización con Ansible y CI/CD pipelines</li>
-                            <li>Migración de infraestructura legacy usando IaC</li>
-                            <li>Desarrollo de módulos reutilizables para self-service</li>
+                            <li data-en="Azure infrastructure management with Terraform (IaC)" data-es="Gestión de infraestructura Azure con Terraform (IaC)">Azure infrastructure management with Terraform (IaC)</li>
+                            <li data-en="GitOps implementation with ArgoCD on AKS" data-es="Implementación GitOps con ArgoCD en AKS">GitOps implementation with ArgoCD on AKS</li>
+                            <li data-en="Automation with Ansible and CI/CD pipelines" data-es="Automatización con Ansible y CI/CD pipelines">Automation with Ansible and CI/CD pipelines</li>
+                            <li data-en="Legacy infrastructure migration using IaC" data-es="Migración de infraestructura legacy usando IaC">Legacy infrastructure migration using IaC</li>
+                            <li data-en="Development of reusable modules for self-service" data-es="Desarrollo de módulos reutilizables para self-service">Development of reusable modules for self-service</li>
                         </ul>
                     </div>
                 </div>
@@ -92,7 +97,7 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Tech Stack</h2>
+            <h2 class="section-title" data-en="Tech Stack" data-es="Stack Tecnológico">Tech Stack</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <i class="fab fa-microsoft"></i>
@@ -185,15 +190,15 @@
     <!-- Projects Section -->
     <section id="projects" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title" data-en="Featured Projects" data-es="Proyectos Destacados">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-icon">
                         <i class="fas fa-network-wired"></i>
                     </div>
-                    <h3>Legacy Infrastructure Migration</h3>
-                    <p><strong>Challenge:</strong> Azure VMs with corrupted networking affecting client services.</p>
-                    <p><strong>Solution:</strong> Recreated infrastructure using Terraform, documented issues in post-mortem that led to full legacy migration approval.</p>
+                    <h3 data-en="Legacy Infrastructure Migration" data-es="Migración de Infraestructura Legacy">Legacy Infrastructure Migration</h3>
+                    <p><strong data-en="Challenge:" data-es="Desafío:">Challenge:</strong> <span data-en="Azure VMs with corrupted networking affecting client services." data-es="VMs de Azure con networking corrupto afectando servicios de clientes.">Azure VMs with corrupted networking affecting client services.</span></p>
+                    <p><strong data-en="Solution:" data-es="Solución:">Solution:</strong> <span data-en="Recreated infrastructure using Terraform, documented issues in post-mortem that led to full legacy migration approval." data-es="Recreé la infraestructura usando Terraform, documenté los problemas en post-mortem que llevaron a la aprobación de migración completa.">Recreated infrastructure using Terraform, documented issues in post-mortem that led to full legacy migration approval.</span></p>
                     <div class="project-tags">
                         <span class="tag">Azure</span>
                         <span class="tag">Terraform</span>
@@ -205,9 +210,9 @@
                     <div class="project-icon">
                         <i class="fas fa-code-branch"></i>
                     </div>
-                    <h3>GitOps Implementation</h3>
-                    <p><strong>Challenge:</strong> Manual deployments causing delays and errors.</p>
-                    <p><strong>Solution:</strong> Implemented GitOps workflow with ArgoCD on AKS, automated deployments.</p>
+                    <h3 data-en="GitOps Implementation" data-es="Implementación GitOps">GitOps Implementation</h3>
+                    <p><strong data-en="Challenge:" data-es="Desafío:">Challenge:</strong> <span data-en="Manual deployments causing delays and errors." data-es="Despliegues manuales causando retrasos y errores.">Manual deployments causing delays and errors.</span></p>
+                    <p><strong data-en="Solution:" data-es="Solución:">Solution:</strong> <span data-en="Implemented GitOps workflow with ArgoCD on AKS, automated deployments." data-es="Implementé flujo GitOps con ArgoCD en AKS, automatizando despliegues.">Implemented GitOps workflow with ArgoCD on AKS, automated deployments.</span></p>
                     <div class="project-tags">
                         <span class="tag">AKS</span>
                         <span class="tag">ArgoCD</span>
@@ -220,9 +225,9 @@
                     <div class="project-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Self-Service Infrastructure</h3>
-                    <p><strong>Challenge:</strong> Developers dependent on DevOps for infrastructure provisioning.</p>
-                    <p><strong>Solution:</strong> Created reusable Terraform modules and CI/CD pipelines enabling developer autonomy.</p>
+                    <h3 data-en="Self-Service Infrastructure" data-es="Infraestructura Self-Service">Self-Service Infrastructure</h3>
+                    <p><strong data-en="Challenge:" data-es="Desafío:">Challenge:</strong> <span data-en="Developers dependent on DevOps for infrastructure provisioning." data-es="Desarrolladores dependientes de DevOps para aprovisionar infraestructura.">Developers dependent on DevOps for infrastructure provisioning.</span></p>
+                    <p><strong data-en="Solution:" data-es="Solución:">Solution:</strong> <span data-en="Created reusable Terraform modules and CI/CD pipelines enabling developer autonomy." data-es="Creé módulos Terraform reutilizables y pipelines CI/CD permitiendo autonomía de desarrolladores.">Created reusable Terraform modules and CI/CD pipelines enabling developer autonomy.</span></p>
                     <div class="project-tags">
                         <span class="tag">Terraform</span>
                         <span class="tag">Azure DevOps</span>
@@ -236,8 +241,8 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Interested in working together? Let's connect!</p>
+            <h2 class="section-title" data-en="Get In Touch" data-es="Contacto">Get In Touch</h2>
+            <p class="section-subtitle" data-en="Interested in working together? Let's connect!" data-es="¿Interesado en trabajar juntos? ¡Conectemos!">Interested in working together? Let's connect!</p>
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/angelignaciomartinez/" target="_blank" class="contact-btn">
                     <i class="fab fa-linkedin"></i>

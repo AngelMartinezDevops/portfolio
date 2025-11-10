@@ -20,11 +20,21 @@
                 <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
                 <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
             </ul>
-            <button id="langToggle" class="lang-toggle" aria-label="Toggle language">
-                <span class="lang-option active">EN</span>
-                <span class="lang-separator">|</span>
-                <span class="lang-option">ES</span>
-            </button>
+            <div class="nav-right">
+                <div class="social-links">
+                    <a href="https://github.com/AngelMartinezDevops" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/angelignaciomartinez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <button id="langToggle" class="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-option active">EN</span>
+                    <span class="lang-separator">|</span>
+                    <span class="lang-option">ES</span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -330,15 +340,16 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-icon">
-                        <i class="fas fa-network-wired"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 data-en="Legacy Infrastructure Migration" data-es="Migración de Infraestructura Legacy">Legacy Infrastructure Migration</h3>
-                    <p><strong data-en="Challenge:" data-es="Desafío:">Challenge:</strong> <span data-en="Azure VMs with corrupted networking affecting client services." data-es="VMs de Azure con networking corrupto afectando servicios de clientes.">Azure VMs with corrupted networking affecting client services.</span></p>
-                    <p><strong data-en="Solution:" data-es="Solución:">Solution:</strong> <span data-en="Recreated infrastructure using Terraform, documented issues in post-mortem that led to full legacy migration approval." data-es="Recreé la infraestructura usando Terraform, documenté los problemas en post-mortem que llevaron a la aprobación de migración completa.">Recreated infrastructure using Terraform, documented issues in post-mortem that led to full legacy migration approval.</span></p>
+                    <h3 data-en="Azure Metrics Exporter" data-es="Azure Metrics Exporter">Azure Metrics Exporter</h3>
+                    <p><strong data-en="Challenge:" data-es="Desafío:">Challenge:</strong> <span data-en="Limited visibility into Azure resource metrics for Prometheus-based monitoring stack." data-es="Visibilidad limitada de métricas de recursos Azure para stack de monitorización basado en Prometheus.">Limited visibility into Azure resource metrics for Prometheus-based monitoring stack.</span></p>
+                    <p><strong data-en="Solution:" data-es="Solución:">Solution:</strong> <span data-en="Developed custom azure-metrics-exporter tool to bridge Azure metrics with Prometheus, enabling real-time monitoring and alerting through Grafana dashboards." data-es="Desarrollé herramienta azure-metrics-exporter personalizada para conectar métricas Azure con Prometheus, permitiendo monitorización en tiempo real y alertas mediante dashboards Grafana.">Developed custom azure-metrics-exporter tool to bridge Azure metrics with Prometheus, enabling real-time monitoring and alerting through Grafana dashboards.</span></p>
                     <div class="project-tags">
+                        <span class="tag">Python</span>
                         <span class="tag">Azure</span>
-                        <span class="tag">Terraform</span>
-                        <span class="tag">Networking</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
                     </div>
                 </div>
 

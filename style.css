@@ -265,7 +265,8 @@ body {
 /* Sections */
 .section {
     padding: 5rem 2rem;
-    background: var(--white);
+    /* Apple-like soft white background to reduce glare */
+    background: #f5f6f7;
 }
 
 .section-dark {
@@ -455,7 +456,12 @@ body {
 
 .skill-card i {
     font-size: 3rem;
-    color: var(--primary);
+    /* Iconos con textura del mismo fondo para contraste elegante */
+    background: url('hero-background.jpg') center/cover fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     margin-bottom: 1rem;
 }
 

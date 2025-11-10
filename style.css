@@ -27,6 +27,26 @@ body {
     background: 
         linear-gradient(135deg, rgba(13, 13, 26, 0.85) 0%, rgba(26, 26, 46, 0.9) 100%),
         url('https://images.unsplash.com/photo-1557672172-298e090bd0f1?q=95&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3') center/cover fixed;
+    animation: backgroundMove 60s ease-in-out infinite;
+}
+
+@keyframes backgroundMove {
+    0%, 100% {
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+    25% {
+        background-position: 60% 40%;
+        background-size: 110% 110%;
+    }
+    50% {
+        background-position: 40% 60%;
+        background-size: 105% 105%;
+    }
+    75% {
+        background-position: 55% 45%;
+        background-size: 110% 110%;
+    }
 }
 
 /* Navbar */

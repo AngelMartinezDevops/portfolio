@@ -28,8 +28,19 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: var(--secondary);
-    background: var(--shared-bg-layers) center/cover fixed;
+    background: #0f1121; /* fallback */
+    position: relative;
+}
+
+/* Background image layer (fixes mobile issues with background-attachment: fixed) */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: var(--shared-bg-layers) center/cover no-repeat;
     animation: backgroundMove 60s ease-in-out infinite;
+    will-change: transform, background-position, background-size;
 }
 
 @keyframes backgroundMove {
@@ -762,5 +773,27 @@ body {
     .contact-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Mobile: aseguremos la visibilidad y rendimiento del fondo */
+    body::before {
+        animation: none;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    /* Hero text sizes en móvil */
+    .hero-title {
+        font-size: 2.1rem;
+    }
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+    .section {
+        padding: 3.5rem 1.25rem;
+    }
+    .btn {
+        padding: 0.7rem 1.4rem;
+        border-radius: 12px;
     }
 }

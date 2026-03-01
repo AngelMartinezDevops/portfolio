@@ -1,6 +1,6 @@
 # Portfolio - Ángel Ignacio Martínez
 
-Portfolio personal de Platform Engineer.
+Portfolio personal de DevOps Engineer.
 
 ## 🚀 Deploy en Cloudflare Pages
 

@@ -7,7 +7,7 @@ Portfolio personal de Platform Engineer.
 ### Paso 1: Subir a GitHub
 
 ```bash
-cd D:\Workspace\portfolio
+cd /path/to/portfolio
 
 # Inicializar git
 git init
@@ -18,7 +18,7 @@ git commit -m "Initial portfolio"
 # Nombre: portfolio
 
 # Conectar y subir (reemplaza TU-USUARIO)
-git remote add origin https://github.com/TU-USUARIO/portfolio.git
+git remote add origin https://github.com/AngelMartinezDevops/portfolio.git
 git branch -M main
 git push -u origin main
 ```

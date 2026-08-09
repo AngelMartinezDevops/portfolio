@@ -43,7 +43,6 @@
                 <li><a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a></li>
                 <li><a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a></li>
                 <li><a href="#education" data-en="Education" data-es="Educación">Education</a></li>
-                <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
                 <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
             </ul>
             <button id="langToggle" class="lang-toggle" aria-label="Toggle language">
@@ -61,7 +60,7 @@
             <p class="hero-subtitle">DevOps Engineer | Cloud Infrastructure | Automation</p>
             <br>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary" data-en="View Projects" data-es="Ver Proyectos">View Projects</a>
+                <a href="#experience" class="btn btn-primary" data-en="View Experience" data-es="Ver Experiencia">View Experience</a>
                 <a href="#contact" class="btn btn-secondary" data-en="Get in Touch" data-es="Contactar">Get in Touch</a>
             </div>
         </div>
@@ -106,9 +105,25 @@
                 <div class="experience-card">
                     <div class="experience-header">
                         <div>
+                            <h3>DevOps Engineer</h3>
+                            <p class="experience-company" data-en="Mapal Group · Full-time · Remote" data-es="Mapal Group · Tiempo completo · Remoto">Mapal Group · Full-time · Remote</p>
+                            <p class="experience-period" data-en="March 2026 - Present · Madrid, Spain" data-es="Marzo 2026 - Actualidad · Madrid, España">March 2026 - Present · Madrid, Spain</p>
+                        </div>
+                    </div>
+                    <ul class="experience-list">
+                        <li data-en="Providing DevOps support for Mapal OS, the hospitality operating system powering Mapal's back-of-house SaaS suite" data-es="Dando soporte DevOps a Mapal OS, el hospitality operating system que potencia la suite SaaS back-of-house de Mapal">Providing DevOps support for Mapal OS, the hospitality operating system powering Mapal's back-of-house SaaS suite</li>
+                        <li data-en="Building and maintaining CI/CD pipelines in Azure DevOps for continuous integration and delivery across Mapal products" data-es="Construyendo y manteniendo pipelines CI/CD en Azure DevOps para integración y entrega continua en los productos Mapal">Building and maintaining CI/CD pipelines in Azure DevOps for continuous integration and delivery across Mapal products</li>
+                        <li data-en="Automating build and deployment workflows to improve release reliability and delivery speed" data-es="Automatizando flujos de build y despliegue para mejorar fiabilidad de releases y velocidad de entrega">Automating build and deployment workflows to improve release reliability and delivery speed</li>
+                        <li data-en="Collaborating with engineering teams to support reliable deployments and operational stability of the Mapal suite" data-es="Colaborando con equipos de engineering para soportar despliegues fiables y estabilidad operativa de la suite Mapal">Collaborating with engineering teams to support reliable deployments and operational stability of the Mapal suite</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
                             <h3 data-en="DevOps Engineer · DevSecOps" data-es="DevOps Engineer · DevSecOps">DevOps Engineer · DevSecOps</h3>
                             <p class="experience-company" data-en="Blackfish ID · Full-time · Hybrid" data-es="Blackfish ID · Tiempo completo · Híbrido">Blackfish ID · Full-time · Hybrid</p>
-                            <p class="experience-period" data-en="January 2026 - Present · Madrid, Spain" data-es="Enero 2026 - Actualidad · Madrid, España">January 2026 - Present · Madrid, Spain</p>
+                            <p class="experience-period" data-en="January 2026 - March 2026 · Madrid, Spain" data-es="Enero 2026 - Marzo 2026 · Madrid, España">January 2026 - March 2026 · Madrid, Spain</p>
                         </div>
                     </div>
                     <ul class="experience-list">
@@ -325,61 +340,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title" data-en="Featured Projects" data-es="Proyectos Destacados">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 data-en="Azure Metrics Exporter" data-es="Azure Metrics Exporter">Azure Metrics Exporter</h3>
-                    <p><strong data-en="Challenge:" data-es="Desafío:">Challenge:</strong> <span data-en="Limited visibility into Azure resource metrics for Prometheus-based monitoring stack." data-es="Visibilidad limitada de métricas de recursos Azure para stack de monitorización basado en Prometheus.">Limited visibility into Azure resource metrics for Prometheus-based monitoring stack.</span></p>
-                    <p><strong data-en="Solution:" data-es="Solución:">Solution:</strong> <span data-en="Developed custom azure-metrics-exporter tool to bridge Azure metrics with Prometheus, enabling real-time monitoring and alerting through Grafana dashboards." data-es="Desarrollé herramienta azure-metrics-exporter personalizada para conectar métricas Azure con Prometheus, permitiendo monitorización en tiempo real y alertas mediante dashboards Grafana.">Developed custom azure-metrics-exporter tool to bridge Azure metrics with Prometheus, enabling real-time monitoring and alerting through Grafana dashboards.</span></p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Azure</span>
-                        <span class="tag">Prometheus</span>
-                        <span class="tag">Grafana</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 data-en="HomeLab Infrastructure" data-es="Infraestructura HomeLab">HomeLab Infrastructure</h3>
-                    <p><strong data-en="Project:" data-es="Proyecto:">Project:</strong> <span data-en="Self-hosted Proxmox environment with full IaC automation using Terraform and Ansible for VM provisioning and configuration management." data-es="Entorno Proxmox self-hosted con automatización IaC completa usando Terraform y Ansible para aprovisionamiento de VMs y gestión de configuración.">Self-hosted Proxmox environment with full IaC automation using Terraform and Ansible.</span></p>
-                    <p><strong data-en="Stack:" data-es="Stack:">Stack:</strong> <span data-en="Containerized services with Docker (Sonarr, Radarr, Jellyfin), Caddy reverse proxy with automatic HTTPS, AdGuard DNS/DHCP, Cloudflare tunnels for public exposure, and automated backups with virtualized Synology NAS." data-es="Servicios containerizados con Docker (Sonarr, Radarr, Jellyfin), Caddy reverse proxy con HTTPS automático, AdGuard DNS/DHCP, túneles Cloudflare para exposición pública, y backups automatizados con Synology NAS virtualizado.">Containerized services with Docker, Caddy reverse proxy, AdGuard DNS, Cloudflare tunnels, and automated backups.</span></p>
-                    <div class="project-tags">
-                        <span class="tag">Proxmox</span>
-                        <span class="tag">Terraform</span>
-                        <span class="tag">Ansible</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Cloudflare</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-dharmachakra"></i>
-                    </div>
-                    <h3 data-en="Proxmox K3s Lab" data-es="Proxmox K3s Lab">Proxmox K3s Lab</h3>
-                    <p><strong data-en="Project:" data-es="Proyecto:">Project:</strong> <span data-en="Automated deployment of a K3s cluster (1 master + 2 workers) on Proxmox using Terraform for VM provisioning and Ansible for Kubernetes configuration. Full IaC from bare metal to ready cluster." data-es="Despliegue automatizado de cluster K3s (1 master + 2 workers) en Proxmox con Terraform para aprovisionar VMs y Ansible para configuración de Kubernetes. IaC completo de bare metal a cluster listo.">Automated K3s cluster (1 master + 2 workers) on Proxmox. Terraform provisions VMs, Ansible deploys Kubernetes. Full IaC from bare metal to ready cluster.</span></p>
-                    <p><strong data-en="Stack:" data-es="Stack:">Stack:</strong> <span data-en="Proxmox VE, Terraform, Ansible, K3s, Cloud-init, Flannel CNI, Traefik Ingress, kubectl." data-es="Proxmox VE, Terraform, Ansible, K3s, Cloud-init, Flannel CNI, Traefik Ingress, kubectl.">Proxmox VE, Terraform, Ansible, K3s, Cloud-init, Flannel CNI, Traefik Ingress, kubectl.</span></p>
-                    <div class="project-tags">
-                        <span class="tag">Proxmox</span>
-                        <span class="tag">Terraform</span>
-                        <span class="tag">Ansible</span>
-                        <span class="tag">K3s</span>
-                        <span class="tag">Kubernetes</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
@@ -404,7 +364,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Ángel Ignacio Martínez. Built with HTML/CSS <span data-en="— but more importantly, built with passion." data-es="— pero más importante, construido con pasión.">— but more importantly, built with passion.</span></p>
+        <p>&copy; 2026 Ángel Ignacio Martínez. Built with HTML/CSS</p>
     </footer>
 
     <script src="script.js"></script>
